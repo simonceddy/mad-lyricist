@@ -85,7 +85,6 @@ class GenerateSongCommand extends Command
 
         // create song object
         $song = $this->songGenerator->make($options->toArray());
-        // dd($options);
         
         if ($options['display']) {
             $output->writeln(
@@ -95,7 +94,6 @@ class GenerateSongCommand extends Command
             return 1;
         }
         
-        // TODO handle custom directory
         try {
             $this->storage->store(
                 $song,

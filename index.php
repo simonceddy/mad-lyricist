@@ -17,10 +17,5 @@ $app->add(new GenerateSongCommand(
 ));
 
 $app->setDefaultCommand('gen:song');
-/* $song = (new SongGenerator(Factory::create()))->make([
-
-]);
-
-dd($song); */
 
 $app->run();
