@@ -9,6 +9,7 @@
             "email": "simon@simoneddy.com.au"
         }
     ],
+    "bin": "bin/madlyric",
     "config": {
        "bin-dir": "bin"
     },
