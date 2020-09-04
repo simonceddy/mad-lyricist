@@ -69,6 +69,12 @@ class GenerateSongCommand extends Command
                 InputOption::VALUE_REQUIRED,
                 'Store the song using the given filename. Sets --display to false.'
             )
+            ->addOption(
+                'dir',
+                'L',
+                InputOption::VALUE_REQUIRED,
+                'Specify a directory to store text files in'
+            )
         ;
     }
 
@@ -88,13 +94,12 @@ class GenerateSongCommand extends Command
             $output->writeln($song);
             return 1;
         }
-
         
-        // TODO handle custom filename
+        // TODO handle custom directory
         try {
             $this->storage->store(
                 $song,
-                null,
+                $options['dir'] ?: null,
                 $options['filename'] ?: null,
                 $options['overwrite']
             );
