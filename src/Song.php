@@ -37,7 +37,7 @@ class Song
             return $this->lyrics;
         }
 
-        return implode("\n", $this->lyrics);
+        return implode("\n\n", $this->lyrics);
     }
 
     /**

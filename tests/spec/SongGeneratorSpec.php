@@ -30,6 +30,6 @@ class SongGeneratorSpec extends ObjectBehavior
         $faker->paragraphs(3, false)->willReturn(['one', 'two', 'three']);
 
         $this->beConstructedWith($faker);
-        $this->make(['no_title' => true])->shouldBeAnInstanceOf(Song::class);
+        $this->make(['noTitle' => true])->shouldBeAnInstanceOf(Song::class);
     }
 }
