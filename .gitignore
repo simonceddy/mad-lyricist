@@ -4,5 +4,5 @@
 .DS_Store
 /bin/*
 !/bin/madlyric
-/box.phar
+*.phar
 /madlyric/*
