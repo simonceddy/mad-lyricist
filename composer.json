@@ -22,7 +22,6 @@
     },
     "require": {
         "symfony/console": "^5.1",
-        "pimple/pimple": "^3.3",
         "fzaninotto/faker": "^1.9",
         "symfony/filesystem": "^5.1"
     },

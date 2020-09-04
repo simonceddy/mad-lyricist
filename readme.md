@@ -2,6 +2,12 @@
 
 Mad Lyricist is a small PHP library and CLI app that generates gibberish lyrics using [Faker](https://github.com/fzaninotto/Faker).
 
+## Requirements
+
+- PHP 7.4 or greater
+- mbstring extension
+- zlib extension (required to use compressed binary releases)
+
 ## Usage
 
 More complete instructions in the works.
@@ -14,7 +20,15 @@ bin/madlyric [options]
 
 This will create a text file in the current directory using a generated song title as the filename.
 
-You can use command options to change some parts of the process ([see below](#options))
+You can use the option flag --display (shortcut -D) to output the generated lyrics directly to the console instead of creating a text file.
+
+```sh
+bin/madlyric --display
+# or
+bin/madlyric -D
+```
+
+[See below](#options) for a list of available options.
 
 ## Options
 

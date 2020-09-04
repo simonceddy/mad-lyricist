@@ -1,3 +1,5 @@
 {
-    "main": "index.php"
+    "main": "index.php",
+    "output": "release/madlyric",
+    "compression": "GZ"
 }

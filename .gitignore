@@ -4,5 +4,6 @@
 .DS_Store
 /bin/*
 !/bin/madlyric
-*.phar
+/*.phar
 /madlyric/*
+/release/*
