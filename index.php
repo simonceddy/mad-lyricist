@@ -15,6 +15,8 @@ $app->add(new GenerateSongCommand(
     new SongGenerator(Factory::create()),
     new StoreSongToTxt(new Filesystem())
 ));
+
+$app->setDefaultCommand('gen:song');
 /* $song = (new SongGenerator(Factory::create()))->make([
 
 ]);
