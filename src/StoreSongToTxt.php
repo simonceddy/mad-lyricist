@@ -25,6 +25,16 @@ class StoreSongToTxt
         bool $overwrite = false
     ) {
         isset($dir) ?: $dir = getcwd();
+
+        if (!isset($filename)) {
+            $filename = $song->title();
+    
+            if (mb_strlen($filename) < 1) {
+                $filename = bin2hex(random_bytes(8));
+            }
+
+        }
+
         $fn = $dir . DIRECTORY_SEPARATOR . ($filename ?: $song->title()) . '.txt';
 
         if (file_exists($fn) && !$overwrite) {
