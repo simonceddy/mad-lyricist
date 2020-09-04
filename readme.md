@@ -8,6 +8,12 @@ Mad Lyricist is a small PHP library and CLI app that generates gibberish lyrics 
 - mbstring extension
 - zlib extension (required to use compressed binary releases)
 
+## PHAR Binary
+
+PHAR binaries are [available here](https://github.com/simonceddy/mad-lyricist/releases).
+
+See [requirements](#requirements) above.
+
 ## Usage
 
 More complete instructions in the works.
