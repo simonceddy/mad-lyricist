@@ -1,0 +1,31 @@
+{
+    "name": "simoneddy/mad-lyricist",
+    "description": "gibberish lyrics generator built on top of faker",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Simon Eddy",
+            "email": "simon@simoneddy.com.au"
+        }
+    ],
+    "config": {
+       "bin-dir": "bin"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+       "psr-4": {
+          "Eddy\\MadLyricist\\": "src"
+       }
+    },
+    "require": {
+        "symfony/console": "^5.1",
+        "pimple/pimple": "^3.3",
+        "fzaninotto/faker": "^1.9"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^5.1",
+        "phpspec/phpspec": "^6.2"
+    }
+}
